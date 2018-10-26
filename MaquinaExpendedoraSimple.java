@@ -93,4 +93,11 @@ public class MaquinaExpendedoraSimple {
     public void bajarPrecio(int bajada){
         precioBillete -= bajada;
     }
+    
+    /**
+     * Permite poner el deposito de dinero a 0
+     */
+    public void vaciarDepositoDinero(){
+        totalDineroAcumulado -= totalDineroAcumulado;
+    }
 }
