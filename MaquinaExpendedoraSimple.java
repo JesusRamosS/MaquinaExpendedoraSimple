@@ -87,4 +87,10 @@ public class MaquinaExpendedoraSimple {
         precioBillete = nuevoPrecio;
     }
     
+    /**
+     * Permite hacer bajar el precio en una cantidad a elegir
+     */
+    public void bajarPrecio(int bajada){
+        precioBillete -= bajada;
+    }
 }
