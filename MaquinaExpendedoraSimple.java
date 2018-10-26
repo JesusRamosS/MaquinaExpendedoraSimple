@@ -1,4 +1,4 @@
-class MaquinaExpendedoraSimple {
+public class MaquinaExpendedoraSimple {
     
     // El precio del billete
     private int precioBillete;
@@ -16,12 +16,12 @@ class MaquinaExpendedoraSimple {
      * precio del billete y el origen y destino dados. Se asume que el precio
      * del billete que se recibe es mayor que 0.
      */
-    public MaquinaExpendedoraSimple(int costeBillete, String origen, String destino) {
-        precioBillete = costeBillete;
+    public MaquinaExpendedoraSimple() {
+        precioBillete = 12;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = origen;
-        estacionDestino = destino;
+        estacionOrigen = "Leon";
+        estacionDestino = "Shangai";
     }
 
     /**
@@ -58,7 +58,7 @@ class MaquinaExpendedoraSimple {
         System.out.println();
 
         // Actualiza el total de dinero acumulado en la maquina
-        totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
+        totalDineroAcumulado += balanceClienteActual;
         // Queda preparada para el proximo cliente
         balanceClienteActual = 0;
     }
